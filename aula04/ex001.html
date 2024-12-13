@@ -1,3 +1,4 @@
+<!--Exercicios de 001 até 004-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,24 +10,44 @@
             margin: 0PX;
             padding: 0PX;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
         }
         body {
-            display: flex;
             background-color: gray;
+            color: white;
         }
         h1 {
             text-align: center;
             background-color: darkcyan;
-            color: white;
+            color: rgb(255, 217, 0);
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
+    <h1>Tratamento de dados</h1>
+    <h2>ex001 e 002</h2>
     <script>
-        window.alert('Minha primeira mensagem!')
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é seu nome?')
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert ('É um grande prazer te conhecer,' + nome + !) // CONCATENAÇÃO
+    </script>
+    <h2>ex003</h2>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        //number + number para adição
+        //string + string para concatenação
+    </script>
+    <h2>ex004</h2>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        //n1.tiFixed(2) colocar duas casa decimais depois da virgula
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) para escolher a moeda para reais
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) para escolher a moeda para dolar
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) para escolher a moeda para euro
     </script>
 </body>
 </html>
